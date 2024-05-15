@@ -2,6 +2,7 @@ import "./App.css"
 import { useState } from "react";
 import Card from "./components/card";
 import WarningLine from "./components/warning";
+import Password from "./components/password";
 function App() {
 
   const [counter, setCounter] = useState(1)
@@ -17,6 +18,7 @@ function App() {
 
     counter > 0 ? setCounter(counter - 1) : setCounter(counter)
   }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -29,10 +31,10 @@ function App() {
 
           <Card button="Boost me" onClick={AddValue} title="Add Card" ></Card>
           <Card button="Reduce me" onClick={RemoveValue} title="Deduct Card" ></Card>
+          <Password ></Password>
+
         </div>
-      </header>
-
-
+      </header >
     </div>
   );
 }
