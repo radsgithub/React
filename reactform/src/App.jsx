@@ -20,7 +20,7 @@ function App() {
       setWarning(true)
       return;
     }
-    setCounter(counter-1);
+    setCounter(counter - 1);
     setWarning(false)
   };
 
